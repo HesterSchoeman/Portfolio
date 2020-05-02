@@ -4,7 +4,6 @@
   z-index: 3;
   right: 35px;
   top: 35px;
-  // change cursor to pointer if hoover over it
   cursor: pointer;
   @include easeOut;
 
@@ -16,11 +15,12 @@
     @include easeOut;
   }
 
-  // Rotate hamburger into X with Menu Lines
+  // Rotate Into X With Menu Lines
   &.close {
     transform: rotate(180deg);
 
     .btn-line {
+      // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
@@ -71,7 +71,7 @@
     @include easeOut;
 
     &.show {
-      // on show class activation bring it onto the screen pos 0,0,0
+      // Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
@@ -79,12 +79,11 @@
   // Branding Side
   &-branding {
     background: $primary-color;
-    // hide branding at the bottom (100% bottom, -100% top)
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {
-      // on show class activation bring it onto the screen pos 0,0,0
+      // Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
 
@@ -102,15 +101,15 @@
     @include easeOut;
 
     &.show {
-      // slide in from right
+      // Slide in from right
       transform: translate3d(0, 0, 0);
     }
 
-    // point to the link <a> in the current class within the nav-item class
     &.current > a {
       color: $secondary-color;
     }
   }
+
   .nav-link {
     display: inline-block;
     position: relative;
@@ -118,18 +117,17 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    columns: set-text-color($primary-color);
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
-    // on hover over nav-link change color
     &:hover {
       color: $secondary-color;
     }
   }
 }
 
-// Delay each nav item slide by 0.1s after the previous
+// Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
