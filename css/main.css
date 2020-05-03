@@ -57,14 +57,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #d63909; }
+      border: solid 3px #26bec4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #d63909; }
+      color: #26bec4; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #d63909; }
+      color: #26bec4; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -122,7 +122,8 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    transition: all 1s ease-out; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -140,7 +141,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #d63909; }
+  color: #26bec4; }
 
 main {
   padding: 4rem;
@@ -151,7 +152,7 @@ main {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #d63909; }
+        color: #26bec4; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -166,7 +167,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #d63909 3px solid; }
+    border: #26bec4 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -179,7 +180,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #d63909 5px solid; }
+    border-bottom: #26bec4 5px solid; }
 
 .projects {
   display: grid;
@@ -190,7 +191,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #d63909;
+      border-color: #26bec4;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -207,7 +208,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #d63909;
+      background: #26bec4;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -218,7 +219,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #d63909;
+    background: #26bec4;
     color: #000; }
 
 .btn-dark {
@@ -237,10 +238,30 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 6rem;
+      transform: scale(0.5, 0.5); }
+      main .lg-heading.show {
+        transform: scale(1, 1); }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 5rem;
+      transform: scale(0.5, 0.5); }
+      main .lg-heading.show {
+        transform: scale(1, 1); }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -250,7 +271,11 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      transform: scale(0.5, 0.5); }
+      main .lg-heading.show {
+        transform: scale(1, 1); }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -283,6 +308,6 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 3.5rem; }
   .projects {
     grid-template-columns: 1fr; } }
