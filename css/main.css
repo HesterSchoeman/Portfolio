@@ -245,7 +245,7 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 6rem;
-      transform: scale(0.5, 0.5); }
+      transform: scale(0.5, 1); }
       main .lg-heading.show {
         transform: scale(1, 1); }
   .projects {
@@ -259,7 +259,7 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 5rem;
-      transform: scale(0.5, 0.5); }
+      transform: scale(0.5, 1); }
       main .lg-heading.show {
         transform: scale(1, 1); }
   .projects {
@@ -273,7 +273,7 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 4rem;
-      transform: scale(0.5, 0.5); }
+      transform: scale(0.5, 1); }
       main .lg-heading.show {
         transform: scale(1, 1); }
   ul.menu-nav,
@@ -284,10 +284,6 @@ main {
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
@@ -311,3 +307,21 @@ main {
       font-size: 3.5rem; }
   .projects {
     grid-template-columns: 1fr; } }
+
+.icons .icon-item {
+  transform: rotate(1turn);
+  transition: all 0.5s ease-out; }
+  .icons .icon-item.show {
+    transform: rotate(0turn); }
+
+.icon-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.icon-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.icon-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.icon-item:nth-child(4) {
+  transition-delay: 0.4s; }
