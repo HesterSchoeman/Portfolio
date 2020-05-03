@@ -9,7 +9,7 @@
       margin-bottom: 1rem;
       font-size: 6rem;
       // transform: rotate(1turn);
-      transform: scale(0.5, 0.5);
+      transform: scale(0.5, 1);
 
       &.show {
         // transform: rotate(0turn);
@@ -33,7 +33,7 @@
       margin-bottom: 1rem;
       font-size: 5rem;
       // transform: rotate(1turn);
-      transform: scale(0.5, 0.5);
+      transform: scale(0.5, 1);
 
       &.show {
         // transform: rotate(0turn);
@@ -57,7 +57,7 @@
       margin-bottom: 1rem;
       font-size: 4rem;
       // transform: rotate(1turn);
-      transform: scale(0.5, 0.5);
+      transform: scale(0.5, 1);
 
       &.show {
         // transform: rotate(0turn);
@@ -75,12 +75,6 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
-  }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
   }
 
   .menu-branding {

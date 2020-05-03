@@ -1,0 +1,18 @@
+// Delay each nav item slide by 0.1s
+
+.icons {
+  .icon-item {
+    transform: rotate(1turn);
+    @include easeOut;
+
+    &.show {
+      transform: rotate(0turn);
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .icon-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}

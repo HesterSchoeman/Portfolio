@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const iconItems = document.querySelectorAll(".icon-item");
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -13,8 +14,10 @@ window.onload = function exampleFunction() {
   console.log("window.onload Esta test");
   if (!showMenu) {
     lgHeading.classList.add("show");
+    iconItems.forEach((item) => item.classList.add("show"));
   } else {
     lgHeading.classList.remove("show");
+    iconItems.forEach((item) => item.classList.remove("show"));
   }
 };
 
