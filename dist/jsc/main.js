@@ -1,4 +1,5 @@
 // Select DOM Items
+const lgHeading = document.querySelector(".lg-heading");
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
@@ -7,6 +8,15 @@ const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State Of Menu
 let showMenu = false;
+
+window.onload = function exampleFunction() {
+  console.log("window.onload Esta test");
+  if (!showMenu) {
+    lgHeading.classList.add("show");
+  } else {
+    lgHeading.classList.remove("show");
+  }
+};
 
 menuBtn.addEventListener("click", toggleMenu);
 

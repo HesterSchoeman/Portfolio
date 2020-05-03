@@ -1,5 +1,22 @@
 // Widescreens
 @include mediaXl {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 6rem;
+      // transform: rotate(1turn);
+      transform: scale(0.5, 0.5);
+
+      &.show {
+        // transform: rotate(0turn);
+        transform: scale(1, 1);
+      }
+    }
+  }
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -7,6 +24,23 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 5rem;
+      // transform: rotate(1turn);
+      transform: scale(0.5, 0.5);
+
+      &.show {
+        // transform: rotate(0turn);
+        transform: scale(1, 1);
+      }
+    }
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -21,6 +55,14 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
+      // transform: rotate(1turn);
+      transform: scale(0.5, 0.5);
+
+      &.show {
+        // transform: rotate(0turn);
+        transform: scale(1, 1);
+      }
     }
   }
 
@@ -78,7 +120,7 @@
 
     .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
   }
 
